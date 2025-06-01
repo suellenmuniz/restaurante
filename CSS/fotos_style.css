@@ -1,0 +1,91 @@
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ocupa a altura da tela */
+    overflow: hidden;
+    background-image: url('../img/doce-pegah-mostafavi-.jpg');
+    background-size: cover;         /* Faz a imagem preencher sem distorcer */
+    background-position: center;    /* Centraliza a imagem */
+    background-repeat: no-repeat;   /* Não repete a imagem */
+}
+
+.slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 10;
+}
+
+.slogan h1 {
+    font-size: 4rem;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7 black);
+}
+
+.slogan p {
+    font-size: 1.5rem;
+    margin: 10px 0 0 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7 black);
+}
+
+.slogan h2 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7 black);
+}
+
+.texto_h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7 black);
+}
+ /* Container da galeria usando flexbox */
+ .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  /* Estilização das imagens da galeria */
+  .galeria img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  /* Efeito de zoom ao passar o mouse */
+  .galeria img:hover {
+    transform: scale(1.15);
+  }
+
+  /* Estilo do lightbox (imagem ampliada) */
+  .lightbox {
+    display: none; /* Esconde o lightbox por padrão */
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Imagem dentro do lightbox */
+  .lightbox img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  }

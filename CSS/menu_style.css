@@ -1,0 +1,85 @@
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ocupa a altura da tela */
+    overflow: hidden;
+    background-image: url('../sobremesa-lisa-gageler.jpg');
+    background-size: cover;         /* Faz a imagem preencher sem distorcer */
+    background-position: center;    /* Centraliza a imagem */
+    background-repeat: no-repeat;   /* Não repete a imagem */
+}
+
+.slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 10;
+}
+
+.slogan h1 {
+    font-size: 4rem;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7 black);
+}
+
+.slogan p {
+    font-size: 1.5rem;
+    margin: 10px 0 0 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7 black);
+}
+
+.slogan h2 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7 black);
+}
+
+/*tabela*/
+
+.texto_h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7 black);
+}
+
+.texto_h2 {
+    text-align: center;
+    font-size: 1,5rem;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7 rgb(236, 8, 8));
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #A6764E;
+    color: white;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+td:last-child {
+    color: #D8A93A;
+    font-weight: bold;
+}

@@ -1,0 +1,143 @@
+body {
+    box-sizing: border-box;
+    background-color: #A6764E;
+    color: #1D1C1C;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* começo dos slides*/
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Altura do header, ajuste como quiser */
+    overflow: hidden;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 300%;
+    height: 100%;
+  }
+  
+  .slide {
+    min-width: 100%;
+    height: 100%;
+  }
+  
+  .slide img {
+    width: 40%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+  
+  .dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 1;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .dot.active {
+    background: #333;
+  }
+  /* fim dos slides*/
+
+.slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 10;
+}
+
+.slogan h1 {
+    font-size: 4rem;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7 black);
+}
+
+.slogan p {
+    font-size: 1.5rem;
+    margin: 10px 0 0 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7 black);
+}
+
+.menu_nav {
+        display: flex;
+        gap: 40px; /* Espaçamento entre os itens */
+        justify-content: center; /* Centraliza o menu */
+        align-items: center;
+    
+}
+
+.menu {
+   margin: 0 20px;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+}
+
+.apresentacao {
+    padding: 5% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.apresentacao_conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.texto_centro {
+    font-size: 2.0rem;
+    text-align: center;
+
+}
+.texto {
+    font-size: 1.5rem;
+    font-family:sans-serif;
+}
+
+.rodape {
+    padding: 0;
+    background-color: #1F3028;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 100;
+    display: block;
+    color: #F5F5F5;
+}

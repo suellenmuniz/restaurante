@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cantinho do vinil</title>
+        <link rel="stylesheet" href="CSS/style_inicio.css">
+    </head>
+<body>
+    <header>
+        <div class="slider">
+            <!-- Container principal do slider -->
+        <div class="slides">
+              <!-- Container que agrupa todos os slides -->
+        <div class="slide active">
+                <!-- Primeiro slide; a classe "active" indica que ele começa visível -->
+        <img src="vinil-pierre-gui.jpg" alt="Slide 1">
+                  <!-- Imagem do primeiro slide com texto alternativo -->
+        </div>
+        <div class="slide">
+        <!-- Segundo slide (inicialmente oculto) -->
+        <img src="comida-nils.jpg" alt="Slide 2">
+         <!-- Imagem do segundo slide -->
+        </div>
+        <div class="slide">
+        <!-- Terceiro slide (inicialmente oculto) -->
+        <img src="vinhomaksym.jpg" alt="Slide 3">
+        <!-- Imagem do terceiro slide -->
+        </div>
+        </div>
+        <div class="dots">
+            <!-- Container para as bolinhas de navegação (paginador) -->
+        <span class="dot active" onclick="goToSlide(0)"></span>
+        <!-- Primeira bolinha; classe "active" indica que está selecionada. Ao clicar, chama a função goToSlide(0) -->
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <!-- Segunda bolinha; ao clicar, chama a função goToSlide(1) -->
+        <span class="dot" onclick="goToSlide(2)"></span>
+        <!-- Terceira bolinha; ao clicar, chama a função goToSlide(2) -->
+        </div>
+        <!-- Fim do container das bolinhas -->
+        </div>
+        <!-- Fim do container principal do slider -->
+        
+        <nav class="menu-nav">
+            <a class="menu" href="index.html">Home</a>
+            <a class="menu" href="menu.html">Menu</a>
+            <a class="menu" href="adega.html">Adega</a>
+            <a class="menu" href="vinil.html">Vinil</a>
+            <a class="menu" href="fotos.html">Fotos</a>
+        </nav>
+
+        <div class="slogan">
+            <h1>Cantinho do vinil</h1>
+            <p>Música no prato, vinho na taça e som na alma.</p>
+        </div>
+</header>
+    <main class="apresentacao">
+        <section class="apresentacao_conteudo">
+            <h1 class="texto_centro">Sobre o cantinho do vinil</h1>
+            <p class="texto">
+                No Cantinho do Vinil, cada detalhe tem alma: o som que sai da vitrola, 
+                o aroma dos pratos feitos com carinho e o sabor de vinhos escolhidos a dedo.
+                Criamos um espaço para quem ama boa música, boa comida e bons momentos.
+                Aqui, o tempo desacelera. A trilha sonora é clássica, os pratos são feitos para compartilhar
+                e o vinho é sempre protagonista na mesa.
+                Mais do que um restaurante, somos um convite para celebrar a vida, entre sabores,
+                sons e histórias que giram no prato… e no disco.
+            </p>
+        </section>
+        
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/f1iPItrNtH4?si=NZuo7gX_3dznJBUR"
+         title="YouTube video player" frameborder="0" 
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen></iframe>
+
+      
+    </main>
+    <script src="script.js"></script>
+        <!-- Importa o arquivo JavaScript externo chamado "script.js", que controla a troca de slides e o comportamento das bolinhas -->
+</body>
+<footer class="rodape">
+	<!animacao>
+	<marquee behavior="scroll" direction="laft" scrollamount="10">
+		Para amantes de som e vinho
+	</marquee>
+
+    <span>
+        &copy; Suellen Muniz, 2025.
+    </span>
+</footer>
+</html>

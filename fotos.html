@@ -27,40 +27,55 @@
         </div>
 </header>
 
-
+<main>
 <!-- Container da galeria -->
 <div class="galeria">
-  <img src="./img/1.jpg" alt="Imagem 1" onclick="abrirLightbox(this.src)">
-  <img src="./img/15.jpg" alt="Imagem 2" onclick="abrirLightbox(this.src)">
-  <img src="./img/27.jpg" alt="Imagem 3" onclick="abrirLightbox(this.src)">
-  <img src="./img/5.jpg" alt="Imagem 4" onclick="abrirLightbox(this.src)">
-  <img src="./img/choc.jpg" alt="Imagem 5" onclick="abrirLightbox(this.src)">
-  <img src="./img/coquetel-de-camarao.jpg" alt="Imagem 6" onclick="abrirLightbox(this.src)">
-  <img src="./img/fettucine.jpg" alt="Imagem 7" onclick="abrirLightbox(this.src)">
-  <img src="./img/massa.jpg" alt="Imagem 8" onclick="abrirLightbox(this.src)">
-  <img src="./img/risoto.jpg" alt="Imagem 9" onclick="abrirLightbox(this.src)">
-  <img src="./img/salada.jpg" alt="Imagem 10" onclick="abrirLightbox(this.src)">
-  <img src="./img/sorvete.jpg" alt="Imagem 11" onclick="abrirLightbox(this.src)">
-  <img src="./img/peixe.jpg" alt="Imagem 12" onclick="abrirLightbox(this.src)">
-  <img src="./img/risoto-harrison-chang.jpg" alt="Imagem 13" onclick="abrirLightbox(this.src)">
-  <img src="./img/abobrinha.jpg" alt="Imagem 14" onclick="abrirLightbox(this.src)">
-  <img src="./img/doce_laura-peruchi.jpg" alt="Imagem 15" onclick="abrirLightbox(this.src)">
-</div>
+    <img src="./img/1.jpg" alt="Imagem 1" onclick="abrirLightbox(this.src)">
+    <img src="./img/15.jpg" alt="Imagem 2" onclick="abrirLightbox(this.src)">
+    <img src="./img/27.jpg" alt="Imagem 3" onclick="abrirLightbox(this.src)">
+    <img src="./img/5.jpg" alt="Imagem 4" onclick="abrirLightbox(this.src)">
+    <img src="./img/choc.jpg" alt="Imagem 5" onclick="abrirLightbox(this.src)">
+    <img src="./img/coquetel-de-camarao.jpg" alt="Imagem 6" onclick="abrirLightbox(this.src)">
+    <img src="./img/fettucine.jpg" alt="Imagem 7" onclick="abrirLightbox(this.src)">
+    <img src="./img/massa.jpg" alt="Imagem 8" onclick="abrirLightbox(this.src)">
+    <img src="./img/risoto.jpg" alt="Imagem 9" onclick="abrirLightbox(this.src)">
+    <img src="./img/salada.jpg" alt="Imagem 10" onclick="abrirLightbox(this.src)">
+    <img src="./img/sorvete.jpg" alt="Imagem 11" onclick="abrirLightbox(this.src)">
+    <img src="./img/peixe.jpg" alt="Imagem 12" onclick="abrirLightbox(this.src)">
+    <img src="./img/risoto-harrison-chang.jpg" alt="Imagem 13" onclick="abrirLightbox(this.src)">
+    <img src="./img/abobrinha.jpg" alt="Imagem 14" onclick="abrirLightbox(this.src)">
+    <img src="./img/doce_laura-peruchi.jpg" alt="Imagem 15" onclick="abrirLightbox(this.src)">
+  </div>
+  
+  <!-- Lightbox: container oculto para mostrar imagem ampliada -->
+  <div class="lightbox" id="lightbox" onclick="fecharLightbox()">
+    <img id="imagemLightbox" src="">
+  </div>
+  
+  <script>
+    // Função para abrir o lightbox e exibir a imagem clicada
+    function abrirLightbox(src) {
+      document.getElementById('imagemLightbox').src = src;
+      document.getElementById('lightbox').style.display = 'flex';
+    }
+  
+    // Função para fechar o lightbox ao clicar fora da imagem
+    function fecharLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
+</main>
 
-<!-- Lightbox: container oculto para mostrar imagem ampliada -->
-<div class="lightbox" id="lightbox" onclick="fecharLightbox()">
-  <img id="imagemLightbox" src="">
-</div>
 
-<script>
-  // Função para abrir o lightbox e exibir a imagem clicada
-  function abrirLightbox(src) {
-    document.getElementById('imagemLightbox').src = src;
-    document.getElementById('lightbox').style.display = 'flex';
-  }
+<footer class="rodape">
+	<!animacao>
+	<marquee behavior="scroll" direction="laft" scrollamount="5">
+		Vinil, vinho e boa comida. Sempre uma boa combinação.
+	</marquee>
 
-  // Função para fechar o lightbox ao clicar fora da imagem
-  function fecharLightbox() {
-    document.getElementById('lightbox').style.display = 'none';
-  }
-</script>
+    <span>
+        &copy; Desenvolvido por Suellen Muniz, 2025.
+    </span>
+</footer>
+
+</body>

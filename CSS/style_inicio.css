@@ -9,19 +9,19 @@ body {
 
 /* começo dos slides*/
 header {
-    position: relative;
+    position: relative; /*permite posicionar elementos filhos*/
     width: 100%;
-    height: 100vh; /* Altura do header, ajuste como quiser */
-    overflow: hidden;
+    height: 100vh; /* Altura do header */
+    overflow: hidden; /*esconde o que ultrapassar o limite*/
 }
 
 .slider {
-    position: absolute;
-    top: 0;
+    position: absolute; /*fixa o slide*/
+    top: 0; 
     left: 0;
     width: 100%;
     height: 100vh;
-    z-index: -1;
+    z-index: -1; /*coloca o slide no fundo*/
   }
   
   .slides {
@@ -39,7 +39,7 @@ header {
   .slide img {
     width: 40%;
     height: 100vh;
-    object-fit: cover;
+    object-fit: cover; /*nao estoura a imagem*/
     object-position: center;
     display: block;
   }
@@ -48,7 +48,7 @@ header {
     position: absolute;
     bottom: 15px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); /*centraliza horizontalmente*/
     display: flex;
     gap: 10px;
     z-index: 1;
@@ -59,8 +59,8 @@ header {
     height: 10px;
     background: #ccc;
     border-radius: 50%;
-    cursor: pointer;
-    transition: background 0.3s;
+    cursor: pointer; /*vira maozinha*/
+    transition: background 0.3s; /*anima quando muda*/
   }
   
   .dot.active {
@@ -94,7 +94,7 @@ header {
         display: flex;
         gap: 40px; /* Espaçamento entre os itens */
         justify-content: center; /* Centraliza o menu */
-        align-items: center;
+        align-items: center; /*centraliza verticalmente*/
     
 }
 
@@ -102,8 +102,8 @@ header {
    margin: 0 20px;
     font-size: 1.5rem;
     color: white;
-    text-decoration: none;
-    align-items: center;
+    text-decoration: none; /*remove o sublinhado*/
+    
 }
 
 .apresentacao {
@@ -117,7 +117,7 @@ header {
 .apresentacao_conteudo {
     width: 50%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*organiza em colunas*/
     gap: 40px;
 }
 

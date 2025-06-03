@@ -3,7 +3,7 @@ header {
     width: 100%;
     height: 100vh; /* Ocupa a altura da tela */
     overflow: hidden;
-    background-image: url('../vinil-clem-onojeghuo.jpg');
+    background-image: url('../img/vinil-clem-onojeghuo.jpg');
     background-size: cover;         /* Faz a imagem preencher sem distorcer */
     background-position: center;    /* Centraliza a imagem */
     background-repeat: no-repeat;   /* Não repete a imagem */
@@ -22,31 +22,31 @@ header {
 .slogan h1 {
     font-size: 4rem;
     margin: 0;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7 black);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .slogan p {
     font-size: 1.5rem;
     margin: 10px 0 0 0;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7 black);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .slogan h2 {
     font-size: 3rem;
     margin: 0;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7 black);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .texto_h1 {
     text-align: center;
     font-size: 3rem;
     margin: 0;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7 black);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .discos {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*quebra a linha de baixo*/
     justify-content: center;
     gap: 30px;
 }
@@ -62,7 +62,7 @@ header {
 }
 
 .disco:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /*efeito de destaque*/
 }
 
 .disco img {
@@ -72,7 +72,7 @@ header {
 }
 
 .nome {
-    font-weight: bold;
+    font-weight: bold; /*negrito*/
     color: #A6764E;
     margin-top: 10px;
     font-size: 1.1rem;
